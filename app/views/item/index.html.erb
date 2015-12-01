@@ -1,0 +1,12 @@
+<h1>Item#index</h1>
+<p>Find me in app/views/item/index.html.erb</p>
+
+<% @items.each do |item| %>
+    <div class='col-md-4'>
+     	<div id="item">
+     <!--  <h2><a href="/user/<%= item.user.id %>"><%= item.user.username %></a></h2> -->
+      	<br>
+      	<a href="/item/<%= item.id %>"><img src="/<%=item.photo%>"></a>
+    	</div>
+    </div>
+ <% end %>
